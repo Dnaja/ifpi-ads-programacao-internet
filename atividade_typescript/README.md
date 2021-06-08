@@ -1,8 +1,8 @@
 # Atividade TypeScript
 ## 1)
 - a) Não compila pois como atribuimos um valor do tipo number na declaração da variável, ela só aceitará outro valor do tipo number.
-- b) Compila pois o tipo any aceita qualquer tipo de dado
-- c) Compila pois o 2 é do tipo number
+- b) Compila pois o tipo any checa o tipo do valor atribuído na variável e aceita a nova atribuição.
+- c) Compila pois o valor 2 é do tipo number.
 
 ## 2)
 - a) 3
