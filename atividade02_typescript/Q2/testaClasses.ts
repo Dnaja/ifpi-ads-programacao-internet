@@ -5,10 +5,10 @@ let p1: Personagem;
 p1 = new Personagem(1, 'P1', 100);
 
 let p2: Soldado;
-p2 = new Soldado(2, 'P2', 100, 7);
+p2 = new Soldado(2, 'P2', 200, 11);
 
 let p3: Soldado;
-p3 = new Soldado(3, 'P3', 100, 8);
+p3 = new Soldado(3, 'P3', 100, 10);
 
 let p4: Cavaleiro;
 p4 = new Cavaleiro(4, 'P4', 100, 10);
