@@ -1,6 +1,6 @@
 import {Personagem, Soldado, Cavaleiro} from "./personagens";
 
-// classes do jogo
+// classe do jogo
 class Jogo {
     arrayPersonagem: Personagem[];
 
@@ -41,6 +41,8 @@ class Jogo {
     avaliar_batalha() {
         console.log("id|nome|energia|vivo");
         for (let i: number = 0; i < this.arrayPersonagem.length; i++) {
+            this.arrayPersonagem[i].validaEnergia();
+
             console.log(this.arrayPersonagem[i].id + "   " + 
             this.arrayPersonagem[i].nome + "   " + this.arrayPersonagem[i].energia
             + "   " + this.arrayPersonagem[i].estaVivo());
