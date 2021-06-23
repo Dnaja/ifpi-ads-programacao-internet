@@ -34,7 +34,7 @@ class Personagem {
 }
 
 
-class Soldado extends Personagem{
+class Soldado extends Personagem {
     forcaAtaque: number;
 
     constructor(id: number, nome: string, energia: number, forcaAtaque: number) {
