@@ -61,9 +61,11 @@ class Soldado extends Personagem {
     }
 
     atacar(p: Personagem) {
-        this.validaForcaAtaque();
-        p.defenderAtaque(this.forcaAtaque);
-    }
+        if (this.estaVivo()) {
+            this.validaForcaAtaque();
+            p.defenderAtaque(this.forcaAtaque);
+        }
+    }     
 }
 
 
@@ -79,8 +81,10 @@ class Cavaleiro extends Soldado {
     }
 
     atacar(p: Personagem) {
-        this.validaForcaAtaque();
-        p.defenderAtaque(2 * this.forcaAtaque);
+        if (this.estaVivo()) {
+            this.validaForcaAtaque();
+            p.defenderAtaque(2 * this.forcaAtaque);
+        }
     }
 }
 
